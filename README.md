@@ -1,7 +1,7 @@
 # perfscripts
 
 
-[root@aupr2ap167nabri ~]# /tmp/pidstatio.sh 1 1 | awk -F" " '($3 > 0.0 || $4 > 0.0) {print $0}'
+/tmp/pidstatio.sh 1 1 | awk -F" " '($3 > 0.0 || $4 > 0.0) {print $0}'
 Timestamp          PID   kB_rd/s   kB_wr/s kB_ccwr/s  Command
 08:56:14         1199      0.00     19.75      0.00  sas
 08:56:14         2842      0.01      0.01      0.00  sas
@@ -25,4 +25,4 @@ Timestamp          PID   kB_rd/s   kB_wr/s kB_ccwr/s  Command
 08:56:14        28527    237.79    212.98      0.63  sas
 08:56:14        31791      0.00      0.03      0.01  sas
 08:56:14        32055      0.00      0.02      0.01  sas
-[root@aupr2ap167nabri ~]#
+
